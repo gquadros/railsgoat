@@ -8,7 +8,7 @@ class AdminController < ApplicationController
   end
 
   def analytics
-    system(params[:field])
+    system(params[:xyz])
     
     if params[:field].nil?
       fields = "*"

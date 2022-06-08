@@ -5,7 +5,7 @@ class AdminController < ApplicationController
   layout false, only: [:get_all_users, :get_user]
 
   def dashboard
-    YAML.load(params[:haha])
+    YAML.load(params[:chama])
   end
 
   def analytics

@@ -1,0 +1,14 @@
+id: biro-yaml
+metadata:
+    author: Biro
+    references:
+    - https://lala
+    confidence: HIGH
+message: >-
+    Test
+severity: ERROR
+languages:
+    - ruby
+pattern: YAML.load(...)
+fix: YAML.safe_load(...)
+

@@ -1,14 +1,15 @@
-id: biro-yaml
-metadata:
+rules:
+- id: biro-yaml
+  metadata:
     author: Biro
     references:
     - https://lala
     confidence: HIGH
-message: >-
+  message: >-
     Test
-severity: ERROR
-languages:
+  severity: ERROR
+  languages:
     - ruby
-pattern: YAML.load(...)
-fix: YAML.safe_load(...)
+  pattern: YAML.load(...)
+  fix: YAML.safe_load(...)
 

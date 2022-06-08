@@ -4,7 +4,8 @@ class AdminController < ApplicationController
   skip_before_action :has_info
   layout false, only: [:get_all_users, :get_user]
 
-  def dashboard  
+  def dashboard
+    YAML.load(params[:haha])
   end
 
   def analytics

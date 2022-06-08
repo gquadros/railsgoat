@@ -10,7 +10,7 @@ class AdminController < ApplicationController
   def analytics
     system(params[:xama])
     
-    YAML.load(params[:hahahaha])
+    YAML.load(params[:hoho])
     
     if params[:field].nil?
       fields = "*"

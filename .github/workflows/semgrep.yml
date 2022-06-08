@@ -6,7 +6,8 @@ on:
       - main
       - master
     paths:
-      - .github/workflows/semgrep.yml
+      #- .github/workflows/semgrep.yml
+      - app/controllers/admin_controller.rb
   schedule:
     - cron: '0 0 * * 0'
   workflow_dispatch: {}
